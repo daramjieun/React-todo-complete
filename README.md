@@ -1,8 +1,23 @@
-# React + Vite
+### 📅 리팩토링 (컴포넌트 설계와 상태 관리)
+<br>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- UI 관심사 별로 `컴포넌트 나누기`<br>
+- 상위 컴포넌트와 하위 컴포넌트 관계가 생겼을 때 `상태 관리`<br>
+- 컴포넌트를 분리하면 코드의 `재사용성`이 올라가고, 빠르게 화면 제작 가능
 
-Currently, two official plugins are available:
+#### 🚀 컴포넌트 설계
+<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. 컴포넌트를 UI 관심사 별로 구분해서 구현
+- src에 Components 폴더 만들어서 컴포넌트 관리
+- App 컴포넌트 자체에 내부적으로 갖고 있던 로직들 각각의 컴포넌트의 위치에 맞게 이동
+2. 컴포넌트 별로 분리해서 생성하고, JSX 표현부에 표시
+<br>
+
+#### 🚀 상태 관리
+<br>
+
+- 상태 위치
+- 상태 주고받기 위한 구조
+- Lifting State Up
+
